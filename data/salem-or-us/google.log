@@ -1,0 +1,273 @@
+Interface Name: GoogleExport
+Service Name: GoogleExport
+
+Export To: S:\District Share\Service\GTFS\Service Changes\2019\January\GTFS\Public\
+Log File: S:\District Share\Service\GTFS\Service Changes\2019\January\GTFS\Public\google.log
+
+Format: Delimiter
+Delimiter: ,
+Qualifier: "
+
+Selected Files: 
+	stop times.txt
+
+SignUp Period:
+	2019_0106
+
+ServiceGroup(s):
+	M-F Weekdays
+	NoService 
+	Sat-Hol Saturday/Holiday
+	Sun-Hol Sun/Holiday
+
+Line(s):
+	01X - Wilsonville / Salem  Express
+	02 - Market / Brown
+	03 - Portland Road
+	04 - State Street
+	05 - Center Street
+	06 - Fairview Industrial
+	07 - Mission Street
+	08 - 12th / Liberty
+	09 - Cherry / River Road
+	10X - Woodburn / Salem Express
+	11 - Lancaster / Verda
+	12 - Hayesville Drive
+	13 - Silverton Road
+	14 - Windsor Island Road
+	16 - Wallace Road
+	17 - Edgewater Street
+	18 - 12th / Liberty
+	19 - Broadway / River Road
+	20X - North Marion County / Salem Express
+	21 - South Commercial
+	22 - Library Loop
+	23 - Lansing / Hawthorne
+	26 - Glen Creek / Orchard Heights
+	27 - Glen Creek / Eola
+	30X - Santiam / Salem Express
+	40X - Polk County / Salem Express
+	50X - Dallas / Salem Express
+
+Options:
+	Revenue trip only: No
+	Use GPS Coordinates: Yes
+	Export Trip Times Only: No
+	StopId Field: StopId
+	RouteId Field: LineId
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Date        time   Message                                                                                                       
+----------  -----  --------------------------------------------------------------------------------------------------------------
+12-28-2018  14:34  Start export.                                                                                                 
+12-28-2018  14:34  Loaded 3 supplementary Records.                                                                               
+12-28-2018  14:34  Loaded signup.                                                                                                
+12-28-2018  14:34  Loaded 81 Headsigns.                                                                                          
+12-28-2018  14:34  Loaded 1 Calendar_dates.                                                                                      
+12-28-2018  14:34  Loaded 1237 stop pattern distances.                                                                           
+12-28-2018  14:34  Loaded 4 ServiceGroups.                                                                                       
+12-28-2018  14:34  Loaded 84 rows of ServiceGroup/ExcCombo Info.                                                                 
+12-28-2018  14:34  Loaded 0 AccessibilityTypes.                                                                                  
+12-28-2018  14:34  Loaded 14 BusTypes.                                                                                           
+12-28-2018  14:34  Loaded 27 lines.                                                                                              
+12-28-2018  14:34  Loaded 1421 trips.                                                                                            
+12-28-2018  14:34  Loaded 745 stops.                                                                                             
+12-28-2018  14:34  Session 1 was created.                                                                                        
+12-28-2018  14:34  Loaded 3 supplementary Records.                                                                               
+12-28-2018  14:34  Loaded signup.                                                                                                
+12-28-2018  14:34  Loaded 81 Headsigns.                                                                                          
+12-28-2018  14:34  Loaded 1 Calendar_dates.                                                                                      
+12-28-2018  14:34  Loaded 1237 stop pattern distances.                                                                           
+12-28-2018  14:34  Loaded 4 ServiceGroups.                                                                                       
+12-28-2018  14:34  Loaded 84 rows of ServiceGroup/ExcCombo Info.                                                                 
+12-28-2018  14:34  Loaded 0 AccessibilityTypes.                                                                                  
+12-28-2018  14:34  Loaded 14 BusTypes.                                                                                           
+12-28-2018  14:34  Loaded 27 lines.                                                                                              
+12-28-2018  14:34  Loaded 1421 trips.                                                                                            
+12-28-2018  14:34  Loaded 745 stops.                                                                                             
+12-28-2018  14:34  Exported 615 stop time records from trip 0 to 29.                                                             
+12-28-2018  14:34  Got 840 stop times from trip 30 to 59.                                                                        
+12-28-2018  14:34  Got 788 stop times from trip 60 to 89.                                                                        
+12-28-2018  14:34  Got 775 stop times from trip 90 to 119.                                                                       
+12-28-2018  14:34  Got 631 stop times from trip 120 to 149.                                                                      
+12-28-2018  14:34  Got 647 stop times from trip 150 to 179.                                                                      
+12-28-2018  14:34  Got 415 stop times from trip 180 to 209.                                                                      
+12-28-2018  14:34  Got 913 stop times from trip 210 to 239.                                                                      
+12-28-2018  14:34  Got 673 stop times from trip 240 to 269.                                                                      
+12-28-2018  14:34  Got 667 stop times from trip 270 to 299.                                                                      
+12-28-2018  14:34  Got 870 stop times from trip 300 to 329.                                                                      
+12-28-2018  14:34  Got 850 stop times from trip 330 to 359.                                                                      
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23436, TripId = 515862, sequence = 11)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23436, TripId = 515864, sequence = 11)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23436, TripId = 515865, sequence = 11)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23436, TripId = 515866, sequence = 11)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23436, TripId = 515867, sequence = 11)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23436, TripId = 515868, sequence = 11)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23436, TripId = 515869, sequence = 11)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23436, TripId = 515870, sequence = 11)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23436, TripId = 515871, sequence = 11)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23436, TripId = 515872, sequence = 11)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23436, TripId = 515873, sequence = 11)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23436, TripId = 515874, sequence = 11)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23436, TripId = 515875, sequence = 11)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23436, TripId = 515876, sequence = 11)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23436, TripId = 515877, sequence = 11)
+12-28-2018  14:34  Got 1020 stop times from trip 360 to 389.                                                                     
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23436, TripId = 515863, sequence = 11)
+12-28-2018  14:34  Got 344 stop times from trip 390 to 419.                                                                      
+12-28-2018  14:34  Got 302 stop times from trip 420 to 449.                                                                      
+12-28-2018  14:34  Got 1177 stop times from trip 450 to 479.                                                                     
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23443, TripId = 515972, sequence = 24)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23443, TripId = 515973, sequence = 24)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23443, TripId = 515974, sequence = 24)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23443, TripId = 515975, sequence = 24)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23443, TripId = 515976, sequence = 24)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23443, TripId = 515977, sequence = 24)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23443, TripId = 515978, sequence = 24)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23442, TripId = 515979, sequence = 13)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23443, TripId = 515983, sequence = 24)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23443, TripId = 515984, sequence = 24)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23443, TripId = 515985, sequence = 24)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23443, TripId = 515986, sequence = 24)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23443, TripId = 515987, sequence = 24)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23443, TripId = 515988, sequence = 24)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23443, TripId = 515989, sequence = 24)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23443, TripId = 515990, sequence = 24)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23443, TripId = 515991, sequence = 24)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23443, TripId = 515992, sequence = 24)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23443, TripId = 515993, sequence = 24)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23443, TripId = 515994, sequence = 24)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23442, TripId = 515996, sequence = 13)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23443, TripId = 516000, sequence = 24)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23443, TripId = 516001, sequence = 24)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23443, TripId = 516002, sequence = 24)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23443, TripId = 516003, sequence = 24)
+12-28-2018  14:34  Got 918 stop times from trip 480 to 509.                                                                      
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23443, TripId = 515980, sequence = 24)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23443, TripId = 515981, sequence = 24)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23443, TripId = 515982, sequence = 24)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23443, TripId = 515995, sequence = 24)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23443, TripId = 515997, sequence = 24)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23443, TripId = 515998, sequence = 24)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23443, TripId = 515999, sequence = 24)
+12-28-2018  14:34  Got 801 stop times from trip 510 to 539.                                                                      
+12-28-2018  14:34  Got 694 stop times from trip 540 to 569.                                                                      
+12-28-2018  14:34  Got 1320 stop times from trip 570 to 599.                                                                     
+12-28-2018  14:34  Got 1307 stop times from trip 600 to 629.                                                                     
+12-28-2018  14:34  Got 1290 stop times from trip 630 to 659.                                                                     
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23451, TripId = 516190, sequence = 2) 
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23451, TripId = 516190, sequence = 4) 
+12-28-2018  14:34  Got 876 stop times from trip 660 to 689.                                                                      
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23451, TripId = 516176, sequence = 2) 
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23451, TripId = 516176, sequence = 4) 
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23451, TripId = 516177, sequence = 2) 
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23451, TripId = 516177, sequence = 4) 
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23451, TripId = 516178, sequence = 2) 
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23451, TripId = 516178, sequence = 4) 
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23451, TripId = 516179, sequence = 2) 
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23451, TripId = 516179, sequence = 4) 
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23451, TripId = 516180, sequence = 2) 
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23451, TripId = 516180, sequence = 4) 
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23451, TripId = 516181, sequence = 2) 
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23451, TripId = 516181, sequence = 4) 
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23451, TripId = 516182, sequence = 2) 
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23451, TripId = 516182, sequence = 4) 
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23451, TripId = 516183, sequence = 2) 
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23451, TripId = 516183, sequence = 4) 
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23451, TripId = 516184, sequence = 2) 
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23451, TripId = 516184, sequence = 4) 
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23451, TripId = 516185, sequence = 2) 
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23451, TripId = 516185, sequence = 4) 
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23451, TripId = 516186, sequence = 2) 
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23451, TripId = 516186, sequence = 4) 
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23451, TripId = 516187, sequence = 2) 
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23451, TripId = 516187, sequence = 4) 
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23451, TripId = 516188, sequence = 2) 
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23451, TripId = 516188, sequence = 4) 
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23451, TripId = 516189, sequence = 2) 
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23451, TripId = 516189, sequence = 4) 
+12-28-2018  14:34  Got 570 stop times from trip 690 to 719.                                                                      
+12-28-2018  14:34  Got 602 stop times from trip 720 to 749.                                                                      
+12-28-2018  14:34  Got 570 stop times from trip 750 to 779.                                                                      
+12-28-2018  14:34  Got 412 stop times from trip 780 to 809.                                                                      
+12-28-2018  14:34  Got 235 stop times from trip 810 to 839.                                                                      
+12-28-2018  14:34  Got 546 stop times from trip 840 to 869.                                                                      
+12-28-2018  14:34  Got 450 stop times from trip 870 to 899.                                                                      
+12-28-2018  14:34  Got 450 stop times from trip 900 to 929.                                                                      
+12-28-2018  14:34  Got 450 stop times from trip 930 to 959.                                                                      
+12-28-2018  14:34  Got 774 stop times from trip 960 to 989.                                                                      
+12-28-2018  14:34  Got 1047 stop times from trip 990 to 1019.                                                                    
+12-28-2018  14:34  Got 810 stop times from trip 1020 to 1049.                                                                    
+12-28-2018  14:34  Got 793 stop times from trip 1050 to 1079.                                                                    
+12-28-2018  14:34  Got 780 stop times from trip 1080 to 1109.                                                                    
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516639, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516640, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516662, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516663, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516664, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516665, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516666, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516667, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516668, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516669, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516670, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516671, sequence = 26)
+12-28-2018  14:34  Got 600 stop times from trip 1110 to 1139.                                                                    
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516615, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516616, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516617, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516618, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516619, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516620, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516621, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516622, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516623, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516624, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516625, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516626, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516627, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516628, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516629, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516630, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516631, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516632, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516633, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516635, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516636, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516637, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516638, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516656, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516657, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516658, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516659, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516660, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516661, sequence = 26)
+12-28-2018  14:34  Got 778 stop times from trip 1140 to 1169.                                                                    
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516641, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516642, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516643, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516644, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516645, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516646, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516647, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516648, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516649, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516650, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516651, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516652, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516653, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516654, sequence = 26)
+12-28-2018  14:34    *Error* Stop Pattern data did not match Stop Times data. (PatternId = 23467, TripId = 516655, sequence = 26)
+12-28-2018  14:34  Got 750 stop times from trip 1170 to 1199.                                                                    
+12-28-2018  14:34  Got 720 stop times from trip 1200 to 1229.                                                                    
+12-28-2018  14:34  Got 258 stop times from trip 1230 to 1259.                                                                    
+12-28-2018  14:34  Got 100 stop times from trip 1260 to 1289.                                                                    
+12-28-2018  14:34  Got 466 stop times from trip 1290 to 1319.                                                                    
+12-28-2018  14:34  Got 408 stop times from trip 1320 to 1349.                                                                    
+12-28-2018  14:34  Got 304 stop times from trip 1350 to 1379.                                                                    
+12-28-2018  14:34  Got 401 stop times from trip 1380 to 1409.                                                                    
+12-28-2018  14:34  Got 90 stop times from trip 1410 to 1420.                                                                     
+12-28-2018  14:34  Exported 31482 stop time records.                                                                             
+12-28-2018  14:34  Closed seeeion 1.                                                                                             
+
