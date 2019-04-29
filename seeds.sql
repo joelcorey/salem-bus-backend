@@ -1,3 +1,15 @@
+COPY routes(
+	route_id,
+	agency_id,
+	route_short_name,
+	route_long_name,
+	route_desc,
+	route_type,
+	route_url,
+	route_color,
+	route_text_color)
+FROM '/tmp/salem-or-us/routes.txt' WITH DELIMITER ',' CSV HEADER;
+
 COPY trips (
 	route_id,
 	service_id,
@@ -11,18 +23,6 @@ COPY trips (
 	bikes_allowed
 ) 
 FROM '/tmp/salem-or-us/trips.txt' WITH DELIMITER ',' CSV HEADER;
-
-COPY routes(
-	route_id,
-	agency_id,
-	route_short_name,
-	route_long_name,
-	route_desc,
-	route_type,
-	route_url,
-	route_color,
-	route_text_color)
-FROM '/tmp/salem-or-us/routes.txt' WITH DELIMITER ',' CSV HEADER;
 
 COPY shapes (
 	shape_id,
