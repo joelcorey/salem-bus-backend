@@ -33,6 +33,22 @@ COPY shapes (
 )
 FROM '/tmp/salem-or-us/shapes.txt' WITH DELIMITER ',' CSV HEADER;
 
+COPY stops(
+	stop_id,
+	stop_code,
+	stop_name,
+	stop_desc,
+	stop_lat,
+	stop_lon,
+	zone_id,
+	stop_url,
+	location_type,
+	parent_station,
+	stop_timezone,
+	wheelchair_boarding
+)
+FROM '/tmp/salem-or-us/stops.txt' WITH DELIMITER ',' CSV HEADER;
+
 COPY stop_times(
 	trip_id,
 	arrival_time,

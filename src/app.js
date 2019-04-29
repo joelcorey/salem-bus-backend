@@ -1,12 +1,11 @@
-require('dotenv').config();
-const express = require('express');
-const morgan = require('morgan');
-const cors = require('cors');
-const helmet = require('helmet');
-const { NODE_ENV } = require('./config');
-const thingsRouter = require('./bus_routes/bus-routes-router.js');
-const authRouter = require('./auth/auth-router');
-
+require('dotenv').config()
+const express = require('express')
+const morgan = require('morgan')
+const cors = require('cors')
+const helmet = require('helmet')
+const { NODE_ENV } = require('./config')
+const authRouter = require('./auth/auth-router')
+const stopsRouter = require('./bus-stops/bus-stops-router')
 const app = express();
 
 app.use(morgan((NODE_ENV === 'production') ? 'tiny' : 'common', {
@@ -15,8 +14,8 @@ app.use(morgan((NODE_ENV === 'production') ? 'tiny' : 'common', {
 app.use(cors());
 app.use(helmet());
 
-app.use('/api/routes', routesRouter);
-app.use('/api/auth', authRouter);
+app.use('/api/stops', stopsRouter);
+//app.use('/api/auth', authRouter);
 
 app.use(function errorHandler(error, req, res, next) {
   let response;
