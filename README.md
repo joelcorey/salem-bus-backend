@@ -14,3 +14,21 @@ https://www.cherriots.org/data/
 If migrating/seeding on a Linux machine that requires it, place in all CSV/TXT data '/tmp' folder for linux. This prevents permissions errors. The '/tmp' folder was designed for this use case, so use it.
 
 the 'tmp-data' folder is a temporary folder of the data that should be in the actual data storage directory. As above, it is recommended that this be '/tmp'.
+
+## Related notes:
+
+Latitude designates North and South of the Equator. Longitude designates East and West of the Prime Meridian.
+
+A negative latitude means South of the Equator, and a negative longitude means West of the Prime Meridian.
+
+Location data is often represented in the form of latitude and longitude pairs like below:
+
+37.427619, -122.166972
+[Hoover Tower, Stanford University]
+
+The simple framework below can help you decode the location pairs.
+
++ + : North and East
++ -  : North and West
+- -   : South and West
+- +  : South and East

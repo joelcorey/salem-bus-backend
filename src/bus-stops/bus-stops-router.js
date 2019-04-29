@@ -23,13 +23,12 @@ stopsRouter
   })
 
 async function checkStopExists(req, res, next) {
-  console.log('hi')
   try {
     const stop = await StopsService.getById(
       req.app.get('db'),
       req.params.stop_id
     )
-    console.log(req.params)
+
     if (!stop) {
       return res.status(404).json({
         error: `Stop doesn't exist`
