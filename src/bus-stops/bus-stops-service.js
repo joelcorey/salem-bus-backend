@@ -16,7 +16,7 @@ const StopsService = {
       )
   },
 
-  getAllTimesByStop(db) {
+  getAllTimesByStop(db, id) {
     return db
       .from(
         'stop_times'
@@ -37,7 +37,7 @@ const StopsService = {
         'routes.route_short_name',
         'routes.route_long_name',
       )
-      // where('')
+      .where('stops.stop_id', '=', id)
   },
 
   getById(db, id) {
