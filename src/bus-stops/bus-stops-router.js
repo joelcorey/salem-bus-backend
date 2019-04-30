@@ -15,12 +15,23 @@ stopsRouter
   })
 
 stopsRouter
-  .route('/:stop_id')
+  .route('/id/:stop_id')
   .all(checkStopExists)
   .get((req, res, next) => {
     console.log(req)
     res.json(StopsService.serializeStop(res.stop))
   })
+
+stopsRouter
+  //pass in lat long and get closest stop, simply stubbed out for now
+  .route('/coords/:lat,:long')
+  .get((req, res, next) => {
+    let lat = parseInt(req.params.lat)
+    let long = parseInt(req.params.long)
+    let latlong = { "lat": lat, "long": long }
+    res.send(latlong)
+  })
+
 
 async function checkStopExists(req, res, next) {
   try {

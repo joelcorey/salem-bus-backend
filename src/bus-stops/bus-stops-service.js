@@ -37,6 +37,10 @@ const StopsService = {
   //     .where()
   // }
 
+  getAllStopOnRoute(db, route) {
+    return 
+  },
+
   serializeStop(stop) {
     return {
       id: stop.stop_id,
