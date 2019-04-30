@@ -8,5 +8,5 @@ CREATE TABLE stop_times (
 	stop_headsign INT,
 	pickup_type TEXT,
 	drop_off_type TEXT,
-	shape_dist_traveled FLOAT
+	shape_dist_traveled NUMERIC
 );

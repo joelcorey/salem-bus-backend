@@ -1,0 +1,22 @@
+SELECT * FROM stop_times 
+INNER JOIN stops ON stops.stop_id = stop_times.stop_id 
+WHERE stops.stop_lat = 44.93545910
+;
+
+SELECT * FROM stop_times 
+INNER JOIN stops ON stops.stop_id = stop_times.stop_id 
+WHERE stops.stop_lat = 44.93545910
+;
+
+SELECT * FROM stop_times
+JOIN stops USING(stop_id) 
+WHERE stops.stop_lat = 44.93545910
+;
+
+SELECT * FROM stops WHERE stop_lat = 44.93545910;
+
+SELECT * FROM stops WHERE stop_id = 2;
+
+SELECT * FROM stops WHERE stop_lat = 44.93545910;
+
+SELECT * FROM stops WHERE stop_lat = 44.935459
