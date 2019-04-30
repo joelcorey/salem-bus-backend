@@ -10,7 +10,7 @@ WHERE stops.stop_lat = 44.93545910
 
 SELECT * FROM stop_times
 JOIN stops USING(stop_id) 
-WHERE stops.stop_lat = 44.93545910
+WHERE stops.stop_lat = 44.935459
 ;
 
 SELECT * FROM stops WHERE stop_lat = 44.93545910;
@@ -20,3 +20,66 @@ SELECT * FROM stops WHERE stop_id = 2;
 SELECT * FROM stops WHERE stop_lat = 44.93545910;
 
 SELECT * FROM stops WHERE stop_lat = 44.935459
+
+users get crowd sourced notifications for bus being on time/late. need ot extract bus route based on stop and/pr bus line name. ie: bus line 12 and/or stop id
+
+extract route from stop_times?
+stop_times.stop_id --> trips.trip_id --> routes.route_id
+
+user selects stop_id (available on stop billboard):
+SELECT * FROM stop_times
+JOIN trips USING(trip_id)
+WHERE trips.stop_id = stop_times.stop_id
+
+get all stop times matching trip id:
+SELECT * FROM stop_times
+INNER JOIN trips ON stop_times .trip_id = trips.trip_id;
+
+get all stop_times.stop_id with matching trips.trip_id with matching routes.route_id:
+SELECT * FROM stop_times
+INNER JOIN trips ON stop_times .trip_id = trips.trip_id
+INNER JOIN routes ON trips .route_id = routes.route_id; 
+
+working:
+select * from stop_times, trips, routes 
+where stop_times.trip_id = trips.trip_id
+and trips.route_id = routes.route_id;
+
+get bus routes at stop, with stop times, and filter by time
+select
+routes.route_id,
+route_short_name
+trip_headsign,
+trips.trip_id,
+arrival_time, 
+departure_time, 
+stop_id,
+shape_dist_traveled,
+bikes_allowed,
+wheelchair_accessible
+from stop_times, trips, routes 
+where stop_times.trip_id = trips.trip_id
+and trips.route_id = routes.route_id
+and stop_times.arrival_time = '16:00:00';
+
+get bus routes at stop, with stop times and lat/lon, and filter by time
+select
+routes.route_id,
+route_short_name
+trip_headsign,
+trips.trip_id,
+arrival_time, 
+departure_time, 
+stop_times.stop_id,
+stops.stop_lat,
+stops.stop_lon,
+shape_dist_traveled,
+bikes_allowed,
+wheelchair_accessible
+from stops, stop_times, trips, routes 
+where stop_times.trip_id = trips.trip_id
+and trips.route_id = routes.route_id
+and stop_times.stop_id = stops.stop_id
+and stop_times.arrival_time = '16:00:00';
+
+and then how to get the upstream stop_times/data so that downstream users can get the correct data

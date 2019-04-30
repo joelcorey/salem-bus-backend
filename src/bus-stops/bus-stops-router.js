@@ -15,10 +15,25 @@ stopsRouter
   })
 
 stopsRouter
+  .route('/id/:id/times')
+  // .all(checkStopExists)
+  .get((req, res,next) => {
+    StopsService.getAllTimesByStop(req.app.get('db'))
+      // .then(stops => {
+      //   stops.filter(id => stop_id == id)
+      //   console.log(stops)
+      //   return stops
+      // })
+      .then(stops => {
+        res.json(stops.map(StopsService.serializeTime))
+      })
+      .catch(next)
+  })
+
+stopsRouter
   .route('/id/:stop_id')
   .all(checkStopExists)
   .get((req, res, next) => {
-    console.log(req)
     res.json(StopsService.serializeStop(res.stop))
   })
 
