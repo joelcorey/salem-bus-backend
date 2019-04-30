@@ -4,19 +4,19 @@ const StopsService = {
 
   getAllStops(db) {
     return db
-      .from('stops as stop')
+      .from('stops')
       .select(
-        'stop.stop_id',
-        'stop.stop_code',
-        'stop.stop_name',
-        'stop.stop_desc',
-        'stop.stop_lat',
-        'stop.stop_lon',
-        'stop.wheelchair_boarding'
+        'stops.stop_id',
+        'stops.stop_code',
+        'stops.stop_name',
+        'stops.stop_desc',
+        'stops.stop_lat',
+        'stops.stop_lon',
+        'stops.wheelchair_boarding'
       )
   },
 
-  getAllTimesByStop(db, id) {
+  getAllTimesByStop(db, id, time = 0) {
     return db
       .from(
         'stop_times'
@@ -38,18 +38,19 @@ const StopsService = {
         'routes.route_long_name',
       )
       .where('stops.stop_id', '=', id)
+      .where('stop_times.arrival_time', '>=', time)
   },
 
   getById(db, id) {
     return StopsService.getAllStops(db)
-      .where('stop.stop_id', id)
+      .where('stops.stop_id', id)
       .first()
   },
 
   getByExactLatLong(db, lat, lon) {
     return StopsService.getAllStops(db)
-      .where('stop.stop_lat', lat)
-      .andWhere('stop.stop_lon', lon)
+      .where('stops.stop_lat', lat)
+      .andWhere('stops.stop_lon', lon)
   },
 
   // getByNearLatLong(db, lat, long) {

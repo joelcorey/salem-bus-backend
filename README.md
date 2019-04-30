@@ -29,6 +29,6 @@ Location data is often represented in the form of latitude and longitude pairs l
 The simple framework below can help you decode the location pairs.
 
 + + : North and East
-+ -  : North and West
-- -   : South and West
-- +  : South and East
++ - : North and West
+- - : South and West
+- + : South and East

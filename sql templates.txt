@@ -83,3 +83,6 @@ and stop_times.stop_id = stops.stop_id
 and stop_times.arrival_time = '16:00:00';
 
 and then how to get the upstream stop_times/data so that downstream users can get the correct data
+
+update stop_times set arrival_time = replace(arrival_time,' ','0')
+where arrival_time like ' %';

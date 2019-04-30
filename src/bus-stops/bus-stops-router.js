@@ -14,11 +14,15 @@ stopsRouter
       .catch(next)
   })
 
+
+// /times/:id/:time and
+// /times/:id
+
 stopsRouter
-  .route('/id/:id/times')
+  .route('/times/:id/:time')
   // .all(checkStopExists)
   .get((req, res,next) => {
-    StopsService.getAllTimesByStop(req.app.get('db'), req.params.id)
+    StopsService.getAllTimesByStop(req.app.get('db'), req.params.id, req.params.time)
       .then(stops => {
         res.json(stops.map(StopsService.serializeTime))
       })
