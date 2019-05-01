@@ -78,6 +78,11 @@ const StopsService = {
   serializeTime(stop) {
     return {
       stopId: stop.stop_id,
+      stopCode: stop.stop_code,
+      stopName: stop.stop_name,
+      stopDesc: stop.stop_desc,
+      stopLat: stop.stop_lat,
+      stopLon: stop.stop_lon,
       arrival: stop.arrival_time,
       departure: stop.departure_time,
       tripRouteId: stop.route_id,
@@ -85,7 +90,9 @@ const StopsService = {
       routeLongName: stop.route_long_name
     }
   }
-
+  
+  // 'routes.route_short_name',
+  // 'routes.route_long_name',
 }
 
 module.exports = StopsService
