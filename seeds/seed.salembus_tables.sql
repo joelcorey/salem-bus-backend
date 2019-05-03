@@ -10,6 +10,16 @@ COPY routes(
 	route_text_color)
 FROM '/tmp/salem-or-us/routes.txt' WITH DELIMITER ',' CSV HEADER;
 
+-- route_id,
+-- service_id,
+-- trip_id,
+-- trip_headsign,
+-- trip_short_name,
+-- direction_id,
+-- block_id,
+-- shape_id,
+-- wheelchair_accessible,
+-- bikes_allowed
 COPY trips (
 	route_id,
 	service_id,
@@ -61,3 +71,6 @@ COPY stop_times(
 	shape_dist_traveled
 )
 FROM '/tmp/salem-or-us/stop_times.txt' WITH DELIMITER ',' CSV HEADER;
+
+UPDATE stop_times SET arrival_time = replace(arrival_time,' ','0')
+WHERE arrival_time LIKE ' %';
