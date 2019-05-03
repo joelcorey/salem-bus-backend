@@ -10,14 +10,3 @@ CREATE TABLE trips(
 	wheelchair_accessible INT,
 	bikes_allowed INT
 );
-
--- route_id,
--- service_id,
--- trip_id,
--- trip_headsign,
--- trip_short_name,
--- direction_id,
--- block_id,
--- shape_id,
--- wheelchair_accessible,
--- bikes_allowed

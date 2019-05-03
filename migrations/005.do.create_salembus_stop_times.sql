@@ -10,13 +10,3 @@ CREATE TABLE stop_times (
 	drop_off_type TEXT,
 	shape_dist_traveled TEXT
 );
-
--- trip_id,
--- arrival_time,
--- departure_time,
--- stop_id,
--- stop_sequence,
--- stop_headsign,
--- pickup_type,
--- drop_off_type,
--- shape_dist_traveled

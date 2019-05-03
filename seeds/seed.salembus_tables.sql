@@ -10,16 +10,6 @@ COPY routes(
 	route_text_color)
 FROM '/tmp/salem-or-us/routes.txt' WITH DELIMITER ',' CSV HEADER;
 
--- route_id,
--- service_id,
--- trip_id,
--- trip_headsign,
--- trip_short_name,
--- direction_id,
--- block_id,
--- shape_id,
--- wheelchair_accessible,
--- bikes_allowed
 COPY trips (
 	route_id,
 	service_id,
