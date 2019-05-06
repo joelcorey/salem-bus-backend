@@ -91,8 +91,6 @@ const StopsService = {
     }
   }
   
-  // 'routes.route_short_name',
-  // 'routes.route_long_name',
 }
 
 module.exports = StopsService
