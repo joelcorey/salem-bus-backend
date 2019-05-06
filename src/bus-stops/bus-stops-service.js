@@ -58,6 +58,7 @@ const StopsService = {
   //     .where()
   // }
 
+
   // getAllStopOnRoute(db, route) {
   //   return 
   // },
@@ -89,7 +90,7 @@ const StopsService = {
       routeShortName: stop.route_short_name,
       routeLongName: stop.route_long_name
     }
-  }
+  },
   
 }
 
