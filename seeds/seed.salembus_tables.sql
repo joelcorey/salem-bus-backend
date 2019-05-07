@@ -64,3 +64,6 @@ FROM '/tmp/salem-or-us/stop_times.txt' WITH DELIMITER ',' CSV HEADER;
 
 UPDATE stop_times SET arrival_time = replace(arrival_time,' ','0')
 WHERE arrival_time LIKE ' %';
+
+UPDATE stop_times SET departure_time = replace(departure_time,' ','0')
+WHERE arrival_time LIKE ' %';

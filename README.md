@@ -8,10 +8,20 @@
 ## Backend user stories and routes explanation
 
 ## Data migration and seeing
-Scrape Salem, OR data such as routes and bus stops from here:
+Source data such as routes and bus stops from here:
 https://www.cherriots.org/data/
 
-If migrating/seeding on a Linux machine that requires it, place in all CSV/TXT data '/tmp' folder for linux. This prevents permissions errors. The '/tmp' folder was designed for this use case, so use it.
+If seeding on a Linux machine, place all CSV/TXT data in to '/tmp/salem-or-bus' folder for linux. This prevents permissions errors.
+
+If seeing on a Windows machine, edit the line "FROM '/tmp/salem-or-us/routes.txt' WITH DELIMITER ',' CSV HEADER;" to reflect the correct directory.
+
+npm migrate -- 0 to reset / undo database
+npm migrate -- run migrations
+
+This project requires a database calles salembus
+
+psql -d salembus -f ./seeds/seed.salembus_tables.sql
+
 
 the 'tmp-data' folder is a temporary folder of the data that should be in the actual data storage directory. As above, it is recommended that this be '/tmp'.
 
