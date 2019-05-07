@@ -33,10 +33,11 @@ const StopsService = {
         'stops.stop_desc',
         'stops.stop_lat',
         'stops.stop_lon',
-        'trips.route_id',
+        // 'trips.route_id',
         'routes.route_short_name',
         'routes.route_long_name',
       )
+      .distinct()
       .where('stops.stop_id', '=', id)
       .where('stop_times.arrival_time', '>=', time)
   },
