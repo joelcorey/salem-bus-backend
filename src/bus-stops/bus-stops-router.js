@@ -20,7 +20,7 @@ stopsRouter
   .get((req, res,next) => {
     StopsService.getAllTimesByStop(req.app.get('db'), req.params.id, req.params.time)
       .then(stops => {
-        console.log(stops)
+        
         res.json(stops.map(StopsService.serializeTime))
       })
       .catch(next)
