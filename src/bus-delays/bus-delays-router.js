@@ -5,7 +5,7 @@ const delaysRouter = express.Router()
 const jsonBodyParser = express.json()
 
 delaysRouter
-  .post('/delays', jsonBodyParser, (req, res, next) => {
+  .post('/', jsonBodyParser, (req, res, next) => {
 
     const { 
       user_id, 
@@ -24,28 +24,22 @@ delaysRouter
       route_short_name,
       delay_time,
     }
+    
+    // for (const [key, value] of Object.entries(delay))
+    //   if (value == null)
+    //     return res.status(400).json({
+    //       error: `Missing '${key}' in request body`
+    //     })  
 
-    for (const [key, value] of Object.entries(delay))
-      if (value == null)
-        return res.status(400).json({
-          error: `Missing '${key}' in request body`
-        })
-
-    console.log(delay)
-
-    AuthService.getUserWithUserName(
+    return DelaysService.insertDelay(
       req.app.get('db'),
-      loginUser.user_name
+      delay
     )
-      .then(dbUser => {
-        if (!dbUser)
-          return res.status(400).json({
-            error: 'Incorrect user_name or password',
-          })
-        console.log(dbUser)
-        
+      .then(delay => {
+        res
+          .status(201)
+          .json(DelaysService.serializeDelay(delay))
       })
-      .catch(next)
   })
 
 module.exports = delaysRouter

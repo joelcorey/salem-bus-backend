@@ -16,8 +16,14 @@ const DelaysService = {
         'date_modified',
       )
   },
-
-  serializeRoute(delay) {
+  insertDelay(db, delay) {
+    return db
+      .insert(delay)
+      .into('delays')
+      .returning('*')
+      .then(([delay]) => delay)
+  },
+  serializeDelay(delay) {
     return { 
       userId: delay.user_id,
       stopId: delay.stop_id,
