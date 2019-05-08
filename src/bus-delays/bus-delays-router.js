@@ -13,7 +13,7 @@ delaysRouter
       stop_number, 
       route_id,
       route_short_name,
-      delay,
+      delay_time,
     } = req.body
 
     const delay = { 
@@ -22,7 +22,7 @@ delaysRouter
       stop_number, 
       route_id,
       route_short_name,
-      delay,
+      delay_time,
     }
 
     for (const [key, value] of Object.entries(delay))
