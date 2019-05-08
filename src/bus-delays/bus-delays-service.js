@@ -32,4 +32,4 @@ const DelaysService = {
 
 }
 
-module.exports = RoutesService
+module.exports = DelaysService

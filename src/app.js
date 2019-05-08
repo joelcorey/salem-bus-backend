@@ -7,6 +7,7 @@ const { NODE_ENV } = require('./config')
 const authRouter = require('./auth/auth-router')
 const stopsRouter = require('./bus-stops/bus-stops-router')
 const routesRouter = require('./bus-routes/bus-routes-router')
+const delaysRouter =  require('./bus-delays/bus-delays-router')
 const usersRouter = require('./users/users-router')
 const app = express()
 
