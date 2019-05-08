@@ -13,6 +13,7 @@ delaysRouter
       stop_number, 
       route_id,
       route_short_name,
+      delay,
     } = req.body
 
     const delay = { 
@@ -20,7 +21,8 @@ delaysRouter
       stop_id, 
       stop_number, 
       route_id,
-      route_short_name, 
+      route_short_name,
+      delay,
     }
 
     for (const [key, value] of Object.entries(delay))
@@ -28,6 +30,8 @@ delaysRouter
         return res.status(400).json({
           error: `Missing '${key}' in request body`
         })
+
+    console.log(delay)
 
     AuthService.getUserWithUserName(
       req.app.get('db'),
