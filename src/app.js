@@ -18,6 +18,7 @@ app.use(helmet());
 
 app.use('/api/stops', stopsRouter)
 app.use('/api/routes', routesRouter)
+app.use('/api/delays', delaysRouter)
 app.use('/api/auth', authRouter)
 app.use('/api/users', usersRouter)
 
