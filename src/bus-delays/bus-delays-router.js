@@ -4,6 +4,28 @@ const DelaysService = require('./bus-delays-service')
 const delaysRouter = express.Router()
 const jsonBodyParser = express.json()
 
+// stopsRouter
+//   .route('/times/:id/:time')
+//   // .all(checkStopExists)
+//   .get((req, res,next) => {
+//     StopsService.getAllTimesByStop(req.app.get('db'), req.params.id, req.params.time)
+//       .then(stops => {
+        
+//         res.json(stops.map(StopsService.serializeTime))
+//       })
+//       .catch(next)
+//   })
+
+delaysRouter
+  .route('/')
+  .get((req, res,next) => {
+    DelaysService.getAllDelays(req.app.get('db'))
+      .then(delays => {
+        res.json(delays.map(DelaysService.serializeDelay))
+      })
+      .catch(next)
+  })
+
 delaysRouter
   .post('/', jsonBodyParser, (req, res, next) => {
 

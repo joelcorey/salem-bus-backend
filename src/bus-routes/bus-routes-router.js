@@ -5,7 +5,6 @@ const { requireAuth } = require('../middleware/jwt-auth')
 const routesRouter = express.Router()
 
 routesRouter
-  .route('/')
   .get((req, res,next) => {
     RoutesService.getAllRoutes(req.app.get('db'))
       .then(stops => {
@@ -14,6 +13,5 @@ routesRouter
       })
       .catch(next)
   })
-  //.route('/delays/:')
 
 module.exports = routesRouter
