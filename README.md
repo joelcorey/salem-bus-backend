@@ -1,5 +1,6 @@
 ## Updated user stories
-See https://github.com/joelcorey/salem-bus-frontend/blob/master/README.md for primary user stories
+This is the back end for the Salem Bus web app.
+See https://github.com/joelcorey/salem-bus-frontend/blob/master/README.md for primary user stories.
 
 ## End points: 
 - /api/stops
