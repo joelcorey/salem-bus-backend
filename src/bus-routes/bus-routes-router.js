@@ -5,11 +5,13 @@ const { requireAuth } = require('../middleware/jwt-auth')
 const routesRouter = express.Router()
 
 routesRouter
+  .route('/')
   .get((req, res,next) => {
     RoutesService.getAllRoutes(req.app.get('db'))
-      .then(stops => {
-        console.log(stops.map(RoutesService.serializeRoute))
-        res.json(stops.map(RoutesService.serializeRoute))
+      .then(routes => {
+        // console.log(stops.map(RoutesService.serializeRoute))
+        console.log('hi')
+        res.json(routes.map(RoutesService.serializeRoute))
       })
       .catch(next)
   })

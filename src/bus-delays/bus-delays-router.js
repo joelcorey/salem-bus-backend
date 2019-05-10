@@ -17,10 +17,9 @@ const jsonBodyParser = express.json()
 //   })
 
 delaysRouter
-  .route('/')
-  .get((req, res,next) => {
+  .get('/', (req, res,next) => {
     DelaysService.getAllDelays(req.app.get('db'))
-      .then(delays => {
+      .then(delays => { 
         res.json(delays.map(DelaysService.serializeDelay))
       })
       .catch(next)
@@ -28,7 +27,6 @@ delaysRouter
 
 delaysRouter
   .post('/', jsonBodyParser, (req, res, next) => {
-
     const { 
       user_id, 
       stop_id, 
@@ -37,7 +35,6 @@ delaysRouter
       route_short_name,
       delay_time,
     } = req.body
-
     const delay = { 
       user_id, 
       stop_id, 
